@@ -1,0 +1,370 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Joshua Comeau's Resume</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Varela+Round|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+  <link rel="stylesheet" href="normalize.css">
+
+  <style>
+  	html {
+  		height: 100%;
+  	}
+  	body {
+  		background: url(images/resume-background.png);
+  		height: 100%;
+  	}
+  	#glow {
+  		position: absolute;
+  		z-index: 1;
+  		width: 800px;
+  		height: 100%;
+  		left: 50%;
+  		margin-left: -400px;
+  		background: url(images/white-glow.png);
+  	}
+	#wrapper-outer {
+		position: relative;
+		z-index: 2;
+		top: 40px;
+		margin: 0 auto 300px auto;
+		padding: 3px;
+		width: 850px;
+		background: #FFF;
+		border-radius: 4px;
+		box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+	}
+	#wrapper-inner {
+		padding-bottom: 200px;
+		border: 1px dotted #999;
+		border-radius: 4px;
+	}
+
+/* HEADER */
+	#title-div {
+		position: absolute;
+		left: 25px;
+		top: 10px;
+		padding-bottom: 1px;
+		border-bottom: 1px solid #999;
+	}
+		#title-div h1 {
+			margin: 0px;
+			font-size: 70px;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-family: 'Montserrat';
+			letter-spacing: -6px;
+		}
+	#contact {
+		position: absolute;
+		right: 28px;
+		top: 24px;
+		width: 200px;
+		text-align: right;
+		font-size: 14px;
+		font-family: 'Varela Round';
+		color: #888;
+	}
+
+		#number-email {
+			margin-top: 8px;
+			font-size: 12px;
+		}
+		#socialmedia {
+			margin-top: 12px;
+		}
+			#socialmedia img {
+				width: 24px;
+				height: 24px;
+			}
+	#subtitle-div {
+		position: absolute;
+		top: 84px;
+		left: 130px;
+		background: #FFF;
+		padding: 0px 10px;
+
+		font-size: 20px;
+		font-family: 'Montserrat';
+		letter-spacing: -1px;
+	}
+
+/* SECTION GENERAL CLASSES */
+	.part-title {
+		position: relative;
+		z-index: 5;
+		margin: auto -4px;
+		height: 40px;
+		font-family: 'Montserrat';
+	}
+	.title-icon-cell {
+		float: left;
+		margin-left: 20px;
+		margin-right: 8px;
+		background: url(images/black_15op.png);
+		width: 30px;
+		padding: 5px;
+	}
+	.title-icon-bg {
+		width: 24px;
+		height: 24px;
+		padding: 3px;
+		background: #FFF;
+		border-radius: 6px;
+		text-align: center;
+		box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	}
+	.title-icon {
+		width: 24px;
+		height: 24px;
+		background-size: 24px 24px;
+	}
+	.title-text {
+		line-height: 40px;
+		color: #FFF;
+		font-weight: 700;
+		font-size: 24px;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+	}
+
+
+
+/* FORMAL EDUCATION */
+	#part-education {
+		margin-top: 150px;
+	}
+	#title-education {
+		background: #E02500;
+	}
+	#icon-education {
+		background-image: url(images/icon-education.png);
+	}
+
+	#education-list {
+		list-style-type: none;
+		text-align: center;
+		padding: 0px;
+	}
+		#education-list > li {
+			display: inline-block;
+			width:230px;
+			height: 350px;
+			margin: 10px 15px;
+			background: #E3E3E3;
+			border-right: 1px solid #DDD;
+			border-bottom: 1px solid #CCC;
+			border-radius: 12px;
+			vertical-align: top;
+		}
+		#education-list > li:hover {
+			background: #F3F3F3;
+			transition: 0.5s;
+		}
+		#education-list > li:hover .school-text h3 {
+			color: #E02500;
+			transition: 0.5s;
+		}
+		#education-list > li:hover .school-icon {
+			opacity: 1;
+			transition: 0.5s;
+		}
+	.school-icon {
+		margin: 15px auto 5px auto;
+		padding-bottom: 11px;
+		width: 175px;
+		height: 122px;
+		border-bottom: 1px dotted #AAA;
+		background-size: 175px 122px;
+		background-repeat: no-repeat;
+		opacity: 0.75;
+	}
+		#elementary-school-icon {
+			background-image: url(images/icon-elementary.png);
+		}
+		#high-school-icon {
+			background-image: url(images/icon-highschool.png);
+		}
+		#college-school-icon {
+			background-image: url(images/icon-college.png);
+		}
+	.school-text {
+		text-align: center;
+		margin: 0px 15px;
+	}
+		.school-text h3 {
+			margin: 0px;
+			color: #8F2A16;
+			font-family: 'Montserrat';
+			font-weight: normal;
+			font-size: 20px;
+		}
+		.school-text h5 {
+			margin: 0px;
+			color: #666;
+			font-family:'Varela Round', cursive;
+			font-weight: normal;
+			font-size: 13px;
+		}
+	.education-bulletpoints {
+		margin: 14px 0px 20px 0px;
+
+	}
+		.education-bulletpoints li {
+			margin-left: -20px;
+			text-align: left;
+			font-family: 'Varela Round', cursive;
+			font-size: 13px;
+			margin-bottom: 8px;
+		}
+
+/* INFORMAL EDUCATION */
+	#title-informal {
+		background: #e96800;
+	}
+	#icon-informal {
+		background-image: url(images/icon-informal.png);
+	}
+	#informal-intro {
+		position: relative;
+		margin: 12px 25px;
+		padding: 4px 12px 12px 12px;
+		border-radius: 10px;
+		border-bottom: 1px dotted #AAA;
+		text-align: justify;
+		font-size: 14px;
+		font-family: 'Varela Round';
+	}
+
+
+  </style>
+
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script>
+  	$(document).ready(function() {
+  		// Bind our image rollovers for social media icons
+  		$("#sm-facebook").mouseenter(function() {
+  			$(this).attr("src","images/icon-facebook-color.png")
+  		}).mouseleave(function() {
+  			$(this).attr("src","images/icon-facebook.png")
+  		});
+  		$("#sm-twitter").mouseenter(function() {
+  			$(this).attr("src","images/icon-twitter-color.png")
+  		}).mouseleave(function() {
+  			$(this).attr("src","images/icon-twitter.png")
+  		});
+  		$("#sm-gplus").mouseenter(function() {
+  			$(this).attr("src","images/icon-gplus-color.png")
+  		}).mouseleave(function() {
+  			$(this).attr("src","images/icon-gplus.png")
+  		});
+
+  		// Bind our education mouseover stuff
+  		/*
+  		$("#elementary-school, #high-school, #college-school").mouseenter(function() {
+  			$(this).find("li").stop().slideDown(600);
+  		}).mouseleave(function() {
+  			$(this).find("li").stop().slideUp(600);
+  		});
+		*/
+
+  	});
+
+  </script>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div id="glow"></div>
+	<div id="wrapper-outer"><div id="wrapper-inner">
+		<div id="title-div"><h1>Joshua Comeau</h1></div>
+		<div id="subtitle-div">Aspiring Rails & JavaScript Developer</div>
+
+		<div id="contact">
+			<div id="address">
+				2-275 Aberdeen Ave.<br>
+				Hamilton, Ontario
+			</div>
+			<div id="number-email">
+				Tel. <a href="tel://1-647-896-7502">1.647.896.7502</a><br>
+				<a href="mailto:joshwcomeau@gmail.com">joshwcomeau@gmail.com</a><br>
+			</div>
+			<div id="socialmedia">
+				<a href="https://www.facebook.com/joshwcomeau"><img src="images/icon-facebook.png" id="sm-facebook"></a>
+				<a href="https://twitter.com/JoshuaWComeau"><img src="images/icon-twitter.png" id="sm-twitter" style="margin: 0px 4px;"></a>
+				<a href="https://plus.google.com/113280497824918495180/posts"><img src="images/icon-gplus.png" id="sm-gplus"></a>
+			</div>
+
+		</div>
+
+		<section class="resume-part" id="part-education">
+			<div class="part-title" id="title-education">
+				<div class="title-icon-cell"><div class="title-icon-bg"><div class="title-icon" id="icon-education"></div></div></div>
+				<div class="title-text">Formal Education</div>
+			</div>
+			<ul id="education-list">
+				<li id="elementary-school">
+					<div id="elementary-school-icon" class="school-icon"></div>
+					<div class="school-text">
+						<h3 class="school-title">Dunrae Gardens</h3>
+						<h5 class="school-subtitle">Primary School</h5>
+						<ul class="education-bulletpoints">
+							<li>Was in the Chess Club before being a nerd was cool.</li>
+							<li>Racked up an impressive collection of <em>'participation'</em> ribbons in various competitions.</li>
+						</ul>
+					</div>
+				</li>
+				<li id="high-school">
+					<div id="high-school-icon" class="school-icon"></div>
+					<div class="school-text">
+						<h3 class="school-title">M.I.N.D. High</h3>
+						<h5 class="school-subtitle">Secondary School</h5>
+						<ul class="education-bulletpoints">
+							<li>Discovered my love of math and my hatred of classic literature.</li>
+							<li>Learned how to spin a basketball on my finger in PE. Otherwise, not much athleticism to speak of.</li>
+						</ul>
+					</div>
+				</li>
+				<li id="college-school">
+					<div id="college-school-icon" class="school-icon"></div>
+					<div class="school-text">
+						<h3 class="school-title">Vanier College</h3>
+						<h5 class="school-subtitle">Post-Secondary School</h5>
+						<ul class="education-bulletpoints">
+							<li>Completed an intensive <em>Audio Recording Technology</em> program.</li>
+							<li>Fulfilled the stereotype of 'indecisive college student' by switching majors 3 times.</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="resume-part" id="part-informal">
+			<div class="part-title" id="title-informal">
+				<div class="title-icon-cell"><div class="title-icon-bg"><div class="title-icon" id="icon-informal"></div></div></div>
+				<div class="title-text">Informal Education and Experimentation</div>
+
+				<div id="informal-intro">
+					The bulk of my skillset has been developed outside of school. Through trial-and-error, experimentation and the addictive thrill of problem-solving, I have taught myself many valuable programming, design and marketing skills.
+				</div>
+			</div>
+			
+
+
+		</section>
+
+
+
+	</div></div>
+	
+
+
+</body>
+</html>
